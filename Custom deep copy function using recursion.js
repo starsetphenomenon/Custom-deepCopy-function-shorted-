@@ -30,7 +30,7 @@ let deepCopiedArray = deepCopyFunction(originalArray)
 originalArray[1] = 0 // Will affect the original only
 console.log(`originalArray[1] = 0 // Will affect the original only`)
 originalArray[2].hello = "moon" // Will affect the original and the shallow copy
-console.log(  `originalArray[2].hello = "moon" // Will affect the original array and the shallow copy`)
+console.log(`originalArray[2].hello = "moon" // Will affect the original array and the shallow copy`)
 
 console.log("Original array:", ...originalArray) // 37 0 Object { hello: "moon" }
 console.log("Shallow copy:", ...shallowCopiedArray) // 37 3700 Object { hello: "moon" }
