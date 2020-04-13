@@ -12,10 +12,7 @@ const deepCopyFunction = (inObject) => {
     value = inObject[key]
 
     // Recursively (deep) copy for nested objects, including arrays
-    outObject[key] =
-      typeof value === "object" && value !== null
-        ? deepCopyFunction(value)
-        : value
+    outObject[key] = deepCopyFunction(value)
   }
 
   return outObject
