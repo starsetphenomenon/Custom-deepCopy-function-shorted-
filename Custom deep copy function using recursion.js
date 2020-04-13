@@ -18,7 +18,8 @@ const deepCopyFunction = inObject => {
   return outObject
 }
 
-let originalArray = [37, 3700, {hello: "world"}] console.log(...originalArray) // 37 3700 Object { hello: "world" }
+let originalArray = [37, 3700, {hello: "world"}]
+console.log(...originalArray) // 37 3700 Object { hello: "world" }
 
 let shallowCopiedArray = originalArray.slice()
 let deepCopiedArray = deepCopyFunction(originalArray)
